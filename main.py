@@ -1,9 +1,8 @@
-from coder import Coder
+from coder import Coder, MorseCoder
 import string
 
-morse = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---",
-         "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."]
 if __name__ == "__main__":
+    # By default, the translator will encode files by switching them to uppercase
     translator = Coder(string.ascii_lowercase, string.ascii_uppercase)
 
     while (1):
